@@ -66,14 +66,14 @@ EXAMPLES
 
 Simple Flow  
 FUNCTION_CALL: get_user_preferences  
-FUNCTION_CALL: generate_final_menu|{"meal_type":"dinner","preferences":{"spicy":true}}  
+FUNCTION_CALL: generate_final_menu|[JSON with meal_type and preferences]
 FINAL_ANSWER: [menu text]
 
 Thorough Flow  
 FUNCTION_CALL: check_calendar  
 FUNCTION_CALL: get_meal_history|7  
 FUNCTION_CALL: get_user_preferences  
-FUNCTION_CALL: generate_final_menu|{"meal_type":"lunch","day":"Sunday","preferences":{...},"history":[...]}  
+FUNCTION_CALL: generate_final_menu|[JSON with all context]
 FINAL_ANSWER: [menu text]
 
 ────────────────────────────

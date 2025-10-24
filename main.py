@@ -6,12 +6,16 @@ import os
 import asyncio
 import json
 from datetime import datetime
+from dotenv import load_dotenv
 from perception import PerceptionAgent
 from memory import MemoryAgent
 from decision import DecisionAgent
 from models import ExtractedFacts, UserPreferences
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
+
+# Load environment variables from .env file
+load_dotenv()
 
 def print_separator():
     print("\n" + "="*80 + "\n")
